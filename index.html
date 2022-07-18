@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Font Awesome Link-->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+
+  <title>Login Form</title>
+  
+  <!---Form CSS Code Start--->
+  <style>
+  /***Google Font Link***/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+  /***Font Family***
+  font-family: 'Noto Sans SC', sans-serif;
+  ****/
+  .main-form-design{
+    height: 600px;
+    width: 400px;
+    padding: 40px 20px;
+    background-image: linear-gradient(0deg, #164c7c, #6cd0f5);
+    margin: auto;
+    margin-top: 40px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .user-logo{
+    margin-bottom: 25px;
+    margin-right: 70px;
+  }
+  /***User Logo Design Start***/
+  .circle{
+    margin-right: 85px;
+    margin-bottom: 7px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    border: 6px solid white;
+  }
+  .squre{
+    width: 120px;
+    height: 60px;
+    margin-right: 50px;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 6px solid white;
+    border-bottom: 0;
+  }
+  /***User Logo Design End***/
+  .heading{
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 6px;
+    letter-spacing: 1px;
+  }
+  .input {
+  display: flex;
+  margin-right: 56px;
+  margin-bottom: 13px;
+  }
+  .login form input{
+    display: block;
+    height: 50px;
+    text-align: end;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .input-field {
+    padding: 10px 0px 10px 0px;
+    outline: none;
+    border: none;
+  }
+  .icon{
+    padding: 17px;
+    background: white;
+    color: #9D9D9E;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .checkbox{
+    display: flex;
+  }
+  .checkbox h1{
+    font-size: 13px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-right: 28px;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 400;
+  } 
+  .checkbox a{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    color: white !important;
+    font-weight: 400;
+    margin-right: 58px;
+    margin-top: 5px;
+  }
+  .special{
+    margin-top: -12px;
+  }
+  /***Login Button Design***/
+  .button {
+    background-color: #EE8f37;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    padding: 11px 90px;
+    border: none;
+    opacity: 0.85;
+    border-radius: 3px;
+    margin-right: 55px;
+    font-size: 19px;
+  }
+  /***Mobile Responsive Code***/
+  @media (min-width: 320px) and (max-width: 520px){
+    .main-form-design {
+    width: 351px;
+    }
+    .circle {
+    margin-right: 60px;
+    }
+    .squre {
+    margin-right: 25px;
+    }
+    .input {
+    margin-right: 35px;
+    margin-bottom: 13px;
+    }
+    .checkbox a {
+    margin-right: 38px;
+    }
+    .button {
+    margin-right: 35px;
+    }
+  @media (min-width: 768px) and (max-width: 1024px){
+  }
+  </style>
+  <!---Form CSS Code End--->
+  </head>
+  <body>
+    <section>
+	    <div class="container">
+		    <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 login">
+            <!---Main Form Design Code Start--->
+				    <div class="main-form-design">
+              <!---User Logo Design--->
+                <div class="user-logo">
+                  <div class="circle"></div>
+                  <div class="squre"></div>
+                </div>
+              <h1 class="heading">Member Login</h1>
+              <!---Form Design--->
+                <form >
+                  <!---Part 1--->
+                  <div class="input">
+                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                    <i class="fa fa-user icon"></i>    
+                  </div>
+                  <div class="input">
+                    <input class="input-field" type="password" placeholder="Password" name="usrnm">
+                    <i class="fa fa-lock icon"></i>    
+                  </div>
+                  <!---Part 2--->
+                  <div class="checkbox">
+                    <a>?Forget password</a>
+                    <h1>Remember me</h1>
+                    <input type="checkbox" name="" class="special">
+                  </div>
+                  <!---Part 3--->
+                  <button type="submit" class="button">Login</button>
+                </form>
+            </div>
+            <!---Main Form Design Code End--->
+          <div class="col-md-3"></div>
+        </div>
+	    </div>
+    </section>
+  </body>
+</html>
+
+
+
+<!--- Main Premium Form Design Link = https://www.freepik.com/premium-vector/login-form-website-ui-account-screen-page-register-user-interface-profile-entry-submit-network-login-template_7213880.htm --->
